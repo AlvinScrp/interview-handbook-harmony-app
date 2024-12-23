@@ -1,0 +1,75 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "srcEntry": "./ets/abilityStage/MyAbilityStage.ets",
+    "description": "你好",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "recoverable": true,
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:PhoneAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:PhoneAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "EntryBackupAbility",
+        "srcEntry": "./ets/entrybackupability/EntryBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      },
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.ACCELEROMETER",
+        "reason": "$string:ACCELEROMETER_permission_desc",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        // 相机权限为用户权限，需要用户授权同意。所以要对权限使用的原因和场景进行描述。
+        "name": "ohos.permission.CAMERA",
+        "reason": "$string:Camera_reason",
+        "usedScene": {
+          "when": "inuse"
+        }
+      }
+    ]
+  }
+}

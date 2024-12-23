@@ -1,0 +1,79 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/canglong/.ohos/config/default_interview-handbook-harmony-app_AwP4KG4r59IFmJvd20om-SPMWY7_0pzWx7uxK41L9JY=.cer",
+          "storePassword": "00000019E3F677FCBAD966DAA1BCDBF0E3DCB09D1E7C7A250C078C79988CEAA0436DCBCE76AE0104E0",
+          "keyAlias": "debugKey",
+          "keyPassword": "00000019E7530D2FBA2A7E553401FCFE77FFA57864B2BCE8A2A23AB3F4D0407E09464D2AF67368CB29",
+          "profile": "/Users/canglong/.ohos/config/default_interview-handbook-harmony-app_AwP4KG4r59IFmJvd20om-SPMWY7_0pzWx7uxK41L9JY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/canglong/.ohos/config/default_interview-handbook-harmony-app_AwP4KG4r59IFmJvd20om-SPMWY7_0pzWx7uxK41L9JY=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+      },
+      {
+        "name": "product-daily",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS"
+      },
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "daily",
+          "applyToProducts": [
+            "product-daily"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "common",
+      "srcPath": "./common",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "daily",
+          "applyToProducts": [
+            "product-daily"
+          ]
+        }
+      ]
+    }
+  ]
+}

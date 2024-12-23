@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "ACCELEROMETER_permission_desc",
+      "value": "sdsdsdsdsdsd"
+    },
+    {
+      "name": "Camera_reason",
+      "value": "Camera_reasonssss"
+    }
+  ]
+}

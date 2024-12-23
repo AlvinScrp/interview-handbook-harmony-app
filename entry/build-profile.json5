@@ -1,0 +1,34 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+  },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false,
+            "files": [
+              "./obfuscation-rules.txt"
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "targets": [
+    {
+      "name": "default",
+      "source": {
+        "sourceRoots": ["./src/default"] // 配置target为default的差异化代码空间
+      }
+    },
+    {
+      "name": "daily",
+      "source": {
+        "sourceRoots": ["./src/daily"] // 配置target为custom的差异化代码空间
+      }
+    }
+  ]
+}

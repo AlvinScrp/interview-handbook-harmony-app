@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "PhoneAbility_desc",
+      "value": "面试题刷题、企业面经"
+    },
+    {
+      "name": "PhoneAbility_label",
+      "value": "面试通2"
+    },
+    {
+      "name": "index_home",
+      "value": "首页"
+    },
+    {
+      "name": "PhoneFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "PhoneFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "widget_desc",
+      "value": "搞定企业面试真题"
+    },
+    {
+      "name": "widget_display_name",
+      "value": "widget"
+    },
+    {
+      "name": "hd_search_placeholder",
+      "value": "搜索题目"
+    },
+    {
+      "name": "hd_clock_continue",
+      "value": "已连续打卡"
+    },
+    {
+      "name": "hd_clock_day",
+      "value": " 天"
+    },
+    {
+      "name": "hd_tag_simple",
+      "value": "简单"
+    },
+    {
+      "name": "hd_tag_general",
+      "value": "一般"
+    },
+    {
+      "name": "hd_tag_difficult",
+      "value": "困难"
+    },
+    {
+      "name": "hd_list_loading",
+      "value": "加载中..."
+    },
+    {
+      "name": "hd_list_finished",
+      "value": "没有更多了~"
+    },
+    {
+      "name": "hd_clock_in",
+      "value": "打卡"
+    }
+  ]
+}
